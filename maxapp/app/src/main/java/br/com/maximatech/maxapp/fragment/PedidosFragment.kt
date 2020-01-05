@@ -101,11 +101,17 @@ class PedidosFragment : Fragment() {
     }
 
     fun savePedidos(){
-        if(!pedidos.isNullOrEmpty()){
+        if(!pedidos.isNullOrEmpty()&&isAdded){
             val db = DatabaseHelper(context!!).writableDatabase
-            pedidoDao.clear(db)
-            pedidoDao.persist(db,pedidos)
-            db.close()
+            try{
+               pedidoDao.clear(db)
+               pedidoDao.persist(db,pedidos)
+               db.close()
+           }catch (e:Exception){
+                Log.e(TAG,e.message,e)
+            }finally {
+                db.close()
+            }
         }
     }
 
@@ -121,6 +127,7 @@ class PedidosFragment : Fragment() {
                 }
             },
             {e->
+                db.close()
                 Log.e(TAG,e.message,e)
             }
         )

@@ -105,9 +105,14 @@ class ClienteFragment : Fragment(){
     fun saveCliente(){
         if(cliente!=null&&isAdded){
             val db = DatabaseHelper(context!!).writableDatabase
-            clienteDao.clear(db)
-            clienteDao.persist(db,cliente!!)
-            db.close()
+             try{
+                 clienteDao.clear(db)
+                 clienteDao.persist(db,cliente!!)
+             }catch (e:Exception){
+                 Log.e(TAG,e.message,e)
+             }finally {
+                 db.close()
+             }
         }
     }
 
@@ -123,6 +128,7 @@ class ClienteFragment : Fragment(){
                 }
             },
             {e->
+                db.close()
                 Log.e(TAG,e.message,e)
             }
         )

@@ -19,7 +19,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".activity.MainActivity"
             android:theme="@style/AppTheme.NoTitle"
-            android:launchMode="singleTask"
+
             android:taskAffinity=""
             android:excludeFromRecents="true"
             android:parentActivityName=".activity.DashboardActivity">
@@ -30,7 +30,7 @@
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.noTitleFullScreen"
-            android:launchMode="singleTask">
+       >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,12 +41,9 @@
             android:name=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
-            android:launchMode="singleTask"/>
-        <activity
-            android:name=".activity.DadosClienteActivity"
-            android:label="@string/str_dadosCliente"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoTitle" />
+            android:launchMode="singleTask"
+           />
+
 
         <receiver android:name=".background.AppReceiver"
             >

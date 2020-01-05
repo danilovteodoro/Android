@@ -31,6 +31,7 @@ class DashboardActivity : AppCompatActivity() {
 
         cardCliente.setOnClickListener {
                 MainActivity.start(this,MainActivity.SCREEN.CLIENTE)
+            finish()
         }
 
 
