@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#186096</color>
+    <color name="colorPrimaryDark">#00386C</color>
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorAccent">#186096</color>
+
+    <color name="scren">#F1F1F1</color>
+    <color name="screenWithCards">#F1F1F1</color>
+
+    <color name="backgroundCards">#FFFFFF</color>
+    <color name="bottomNavigation">#186096</color>
+    <color name="activeBottomNavigation">#FFFFFF</color>
+    <color name="inactiveBottomNavigation">#95B6CF</color>
+
+    <color name="gradientStart">#186096</color>
+    <color name="gradientEnd">#053F6A</color>
+    <color name="green">#638735</color>
+    <color name="green2">#64863b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGray">#95989a</color>
+    <color name="dividerColor">#9e9e9e</color>
+
+
+</resources>

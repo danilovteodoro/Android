@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/screenWithCards">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="8dp"
+        android:id="@+id/gdleft"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="8dp"
+        android:id="@+id/gdRight"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="vertical"
+        android:id="@+id/gdWidth"/>
+     <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="horizontal"
+        android:id="@+id/gdHeiht"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+
+        app:layout_constraintLeft_toLeftOf="@id/gdleft"
+        app:layout_constraintBottom_toTopOf="@id/gdHeiht"
+        app:layout_constraintRight_toRightOf="@id/gdWidth"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/background_card"
+            android:id="@+id/cardCliente">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_maxima_pessoas"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_clientes"
+
+                style="@style/textoMenuPrincipal"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+ <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdWidth"
+        app:layout_constraintBottom_toTopOf="@id/gdHeiht"
+        app:layout_constraintRight_toRightOf="@id/gdRight"
+        >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:focusable="true"
+         android:clickable="true"
+         android:background="@drawable/background_card"
+         android:id="@+id/cardPedidos">
+         <ImageView
+             android:layout_width="48dp"
+             android:layout_height="48dp"
+             android:src="@drawable/ic_maxima_pedido"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/str_pedidos"
+
+             style="@style/textoMenuPrincipal"/>
+     </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+
+        app:layout_constraintLeft_toLeftOf="@id/gdleft"
+        app:layout_constraintTop_toBottomOf="@id/gdHeiht"
+        app:layout_constraintRight_toRightOf="@id/gdWidth"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/background_card"
+            android:id="@+id/cardVendas">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_maxima_resumo_vendas"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_resumoVendas"
+
+                style="@style/textoMenuPrincipal"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdWidth"
+        app:layout_constraintTop_toBottomOf="@id/gdHeiht"
+        app:layout_constraintRight_toRightOf="@id/gdRight"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/background_card"
+            android:id="@+id/cardFerramentas">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_maxima_ferramentas"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_ferramentas"
+                style="@style/textoMenuPrincipal"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

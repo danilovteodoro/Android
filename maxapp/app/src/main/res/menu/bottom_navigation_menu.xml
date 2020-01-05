@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dadosClientMenu"
+        android:title="@string/str_dados"
+        android:icon="@drawable/ic_maxima_pessoa_ativo"/>
+    <item android:id="@+id/historicoMenu"
+        android:title="@string/str_historico"
+        android:icon="@drawable/ic_maxima_historico_pedidos_ativo"/>
+    <item android:id="@+id/alvaraMenu"
+        android:title="@string/str_alvaras"
+        android:icon="@drawable/ic_maxima_alvara_ativo"/>
+
+</menu>

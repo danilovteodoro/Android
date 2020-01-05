@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shapePaddingLeftRight">12dp</dimen>
+    <dimen name="shapePaddingTopBottom">6dp</dimen>
+
+    <dimen name="dimenPedidoLegenda">21dp</dimen>
+    <dimen name="dimenStatusPedido">67dp</dimen>
+    <dimen name="dimenLegendaStatusPedido">54dp</dimen>
+    <dimen name="dimenLegendaStatusPedido20">30dp</dimen>
+
+    <dimen name="t10">15sp</dimen>
+    <dimen name="t12">18sp</dimen>
+    <dimen name="t14">21sp</dimen>
+    <dimen name="t16">24sp</dimen>
+    <dimen name="t18">27sp</dimen>
+    <dimen name="t20">30sp</dimen>
+    <dimen name="t24">36sp</dimen>
+</resources>
